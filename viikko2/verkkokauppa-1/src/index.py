@@ -1,15 +1,9 @@
 from kauppa import Kauppa
-from kirjanpito import Kirjanpito
-from varasto import Varasto
-from pankki import Pankki
-from viitegeneraattori import Viitegeneraattori
+from kirjanpito import kirjanpito as kp
 
 def main():
-    viitegeneraattori = Viitegeneraattori()
-    kirjanpito = Kirjanpito()
-    varasto = Varasto(kirjanpito)
-    pankki = Pankki(kirjanpito)
-    kauppa = Kauppa(varasto, pankki, viitegeneraattori)
+    kirjanpito = kp
+    kauppa = Kauppa()
 
     # kauppa hoitaa yhden asiakkaan kerrallaan seuraavaan tapaan:
     kauppa.aloita_asiointi()

@@ -20,6 +20,9 @@ Login Page Should Be Open
     Title Should Be  Login
 
 Main Page Should Be Open
+    Title Should Be  Ohtu Application main page
+
+What Is Main Page
     Title Should Be  Ohtu Application
 
 Go To Login Page
@@ -27,7 +30,7 @@ Go To Login Page
 
 Go To Main Page
     Go To  ${HOME URL}
-    Main Page Should Be Open
+    What Is Main Page
 
 Register Page Should Be Open
     Title Should Be  Register

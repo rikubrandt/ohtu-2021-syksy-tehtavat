@@ -28,6 +28,9 @@ What Is Main Page
 Go To Login Page
     Go To  ${LOGIN URL}
 
+Go To Register Page
+    Go To  ${REGISTER URL}
+
 Go To Main Page
     Go To  ${HOME URL}
     What Is Main Page

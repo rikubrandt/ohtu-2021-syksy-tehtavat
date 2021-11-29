@@ -37,6 +37,9 @@ class Ostoskori:
         o = self.kori[tuote]
         o.muuta_lukumaaraa(-1)
 
+        if o.lukumaara() == 0:
+            self.kori.pop(tuote)
+
 
     def tyhjenna(self):
         pass

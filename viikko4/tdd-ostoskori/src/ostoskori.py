@@ -31,9 +31,12 @@ class Ostoskori:
             t.muuta_lukumaaraa(1)
         else:
             self.kori.append(Ostos(lisattava))
+
     def poista_tuote(self, poistettava: Tuote):
-        # poistaa tuotteen
-        pass
+        tuote = next((i for i, x in enumerate(self.kori) if x.tuote.nimi()==poistettava.nimi()), None)
+        o = self.kori[tuote]
+        o.muuta_lukumaaraa(-1)
+
 
     def tyhjenna(self):
         pass
